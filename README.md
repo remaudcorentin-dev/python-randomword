@@ -26,6 +26,8 @@ for i in range(0, 5):
 or simply :
 
 ```python
-print( RandomWord() )
+>>> from randomword import RandomWord
+>>> print( RandomWord() )
+# sluggard : lazy slow-moving person
 ```
 
