@@ -22,3 +22,10 @@ for i in range(0, 5):
     print("# %s : %s" % (result['word'], result['definition']))
 
 ```
+
+or simply :
+
+```python
+print( RandomWord() )
+```
+
