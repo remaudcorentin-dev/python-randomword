@@ -1168,9 +1168,19 @@ data= [
     ]
 
 class RandomWord(object):
+	"""
+	{'word': str, 'definition': str}
+	"""
 
 	def __init__(self):
 		self.data = data
 
-	def get(self):
+	def __str__(self):
+		w = self.__get_word()
+		return "# %s : %s" % (w['word'], w['definition'])
+
+	def __get_word(self):
 		return self.data[randint(0, len(self.data) - 1)]
+
+	def get(self):
+		return self.__get_word()
